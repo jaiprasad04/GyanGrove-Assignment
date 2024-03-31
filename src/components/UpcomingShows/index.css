@@ -1,0 +1,45 @@
+.upcoming-list-card {
+    background-color: #ffffff;
+    border: 1px solid #B0BABF;
+    border-radius: 8px;
+}
+
+.upcoming-img {
+    display: flex;
+    padding: 2px 15px;
+}
+
+.xyz {
+    align-self: flex-end;
+    background-color: #00000046;
+    color: #dde9ef;
+    width: 100%;
+    font-family: "Inter";
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 0 0 8px 8px;
+}
+
+.pqr {
+    color: #1E2022;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 14px;
+}
+
+.pqr-stu {
+    color: #888484;
+    padding: 0 14px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.efg-ijk {
+    color: #aba1a1;
+    padding: 0 14px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 10px;
+}
