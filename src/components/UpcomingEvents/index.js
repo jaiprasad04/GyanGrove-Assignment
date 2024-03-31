@@ -20,8 +20,8 @@ const UpcomingEvents = () => {
                     imgUrl: convertDriveLinkToDirectDownload(event.imgUrl)
                 }));
                 setData(prevData => [...prevData, ...updatedData])
-                setPage(page + 1); // Use functional update
-                if (page >= 5) { // Use prevPage instead of page
+                setPage(page + 1); 
+                if (page >= 5) { 
                     setHasMore(false);
                 }
             }
@@ -38,7 +38,6 @@ const UpcomingEvents = () => {
         if (fileId) {
             return `https://lh3.googleusercontent.com/d/${fileId[0]}`;
         } else {
-            // console.error('Invalid Google Drive link:', driveLink);
             return driveLink; 
         }
     };
@@ -48,14 +47,12 @@ const UpcomingEvents = () => {
           window.innerHeight + document.documentElement.scrollTop ===
           document.documentElement.offsetHeight
         ) {
-          // Load more data when scrolled to the bottom of the page
           if (hasMore) {
             setPage(prevPage => prevPage + 1);
           }
         }
       };
     
-      // Attach scroll event listener when component mounts
       useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
